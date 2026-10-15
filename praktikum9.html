@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktik Modul 4 - Formulir Pendaftaran</title>
+    <br><a href="index.html">Kembali ke Menu Utama</a></br>
+</head>
+<body background="background.jpg"
+
+    <h1>Formulir Pendaftaran Ekstrakurikuler Web Club</h1>
+    <p>Silakan isi data diri Anda dengan lengkap di bawah ini:</p>
+    
+    <hr>
+
+    <form action="#" method="POST">
+        
+        <!-- Input Teks Biasa -->
+        <p>
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        </p>
+
+        <!-- Input Email & Password -->
+        <p>
+            <label for="email">Alamat Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="contoh@gmail.com" required>
+        </p>
+        <p>
+            <label for="password">Password Akun:</label><br>
+            <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" required>
+        </p>
+
+        <!-- Input Angka & Tanggal -->
+        <p>
+            <label for="umur">Umur (Tahun):</label><br>
+            <input type="number" id="umur" name="umur" min="12" max="25" value="16">
+        </p>
+        <p>
+            <label for="tanggal_lahir">Tanggal Lahir:</label><br>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+        </p>
+
+        <!-- Radio Button (Pilihan Tunggal) -->
+        <p>
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="jk_l" name="jenis_kelamin" value="Laki-laki">
+            <label for="jk_l">Laki-laki</label>
+            
+            <input type="radio" id="jk_p" name="jenis_kelamin" value="Perempuan">
+            <label for="jk_p">Perempuan</label>
+        </p>
+
+        <!-- Dropdown / Select -->
+        <p>
+            <label for="kelas">Kelas Saat Ini:</label><br>
+            <select name="kelas" id="kelas">
+                <option value="X">Kelas X (Sepuluh)</option>
+                <option value="XI" selected>Kelas XI (Sebelas)</option>
+                <option value="XII">Kelas XII (Dua Belas)</option>
+            </select>
+        </p>
+
+        <!-- Checkbox (Pilihan Ganda) -->
+        <p>
+            <label>Minat Keahlian (Boleh pilih lebih dari 1):</label><br>
+            <input type="checkbox" id="hobi1" name="minat" value="HTML_CSS">
+            <label for="hobi1">Desain Web (HTML/CSS)</label><br>
+            
+            <input type="checkbox" id="hobi2" name="minat" value="JS">
+            <label for="hobi2">Pemrograman (JavaScript)</label><br>
+            
+            <input type="checkbox" id="hobi3" name="minat" value="Jaringan">
+            <label for="hobi3">Jaringan Komputer (MikroTik)</label>
+        </p>
+
+        <!-- Input Warna & Upload File -->
+        <p>
+            <label for="warna">Warna Kaos Favorit:</label><br>
+            <input type="color" id="warna" name="warna_kaos" value="#ff0000">
+        </p>
+        <p>
+            <label for="foto">Unggah Pas Foto:</label><br>
+            <input type="file" id="foto" name="foto_profil">
+        </p>
+
+        <!-- Textarea -->
+        <p>
+            <label for="alasan">Alasan Bergabung:</label><br>
+            <textarea id="alasan" name="alasan" rows="3" cols="30" placeholder="Tuliskan motivasi kamu..."></textarea>
+        </p>
+
+        <hr>
+
+        <!-- Tombol Aksi -->
+        <p>
+            <input type="submit" value="Daftar Sekarang">
+            <input type="reset" value="Kosongkan Form">
+        </p>
+
+    </form>
+
+</body>
+</html>
